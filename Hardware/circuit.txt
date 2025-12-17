@@ -1,0 +1,19 @@
+KidCareBand: Technical Circuit & Logic Overview 🛠️
+1. Project Essence
+The KidCareBand is an ESP32-based wearable designed to bridge the gap between parental oversight and child independence. It provides haptic and visual alerts for daily routines (hydration, medicine) while offering a "Panic Button" safety system for emergencies.
+
+2. Communication Protocols
+* I2C (Inter-Integrated Circuit): The OLED Display uses this two-wire protocol (SDA/SCL). This is ideal for wearables because it allows multiple sensors to share the same pins, saving space on the ESP32.
+* UART (Universal Asynchronous Receiver-Transmitter): The NEO-6M GPS module communicates via Serial (TX/RX) to send NMEA location strings to the microcontroller.
+
+3. Component Breakdown
+* ESP32 WROOM (30-Pin): High-speed dual-core processor with integrated WiFi/Bluetooth.
+* Panic Button & Active Buzzer: A hardware safety loop. When the button is pressed, the code triggers the buzzer to emit a high-frequency alarm to deter threats.
+* Vibration Motor: Used for non-emergency notifications (e.g., "Time to drink water").
+* 0.96" OLED: Provides clear visual feedback for the child.
+
+4. Power Management Considerations 🔋
+The ESP32 is more power-hungry than a standard Arduino Uno, especially when WiFi/GPS are active.
+* Current Spikes: During WiFi transmission, the ESP32 can draw up to 240mA. Ensure your power source (battery) can handle these bursts.
+* Voltage Levels: The ESP32 operates at 3.3V. Connecting 5V directly to the data pins will damage the chip.
+* Efficiency: For a wearable, using the Deep Sleep mode in your code is recommended to extend battery life when sensors are not in use.

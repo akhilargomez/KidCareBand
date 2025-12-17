@@ -3,7 +3,7 @@
 
 ## Key Features: Hydration, Medicine, Transport timing haptic alert using Vibration motor, OLED Display for visual alert and indication, GPS Module attachment to locate the child, mobile application for parents to track all these.
 
-![KidCareBand and App](Mobile_App/App&Band.png)
+![KidCareBand and App](Mobile App/App&Band.png)
 
 ## Below is the circuit layout for the device.
 ![KidCareBand Circuit Diagram](Hardware/KidCareBand.png)

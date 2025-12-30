@@ -3,14 +3,14 @@
 
 ![KidCareBand and App](MobileApp/App&Band.png)
 
-## 🌱About the Project
+## 🌱 About the Project
 KidCareBand is an IoT enabled smart wearable designed to support children in their daily routines while giving parents peace of mind, without making the child dependent on a smartphone.
 
 This project explores how embedded systems and connected technologies can be used not just for automation, but for care, awareness, and safety, especially for young users.
 
 At its core, KidCareBand focuses on timely alerts, location awareness, and habit support, all delivered in a child friendly and non-intrusive manner.
 
-🎯 ##Problem Statement
+## 🎯 Problem Statement
 Children often forget or miss important daily routines such as:
 
 * Drinking enough water
@@ -22,7 +22,7 @@ At the same time, parents need reliable, real-time visibility without constant c
 
 KidCareBand addresses both sides of this problem using wearable hardware + mobile based monitoring, keeping the interaction simple for the child and informative for the parent.
 
-🧠 ##Solution Overview
+## 🧠 Solution Overview
 KidCareBand works as a standalone smart band for the child, paired with a mobile application for parents.
 
 * The child receives alerts through vibration and on-band display
@@ -30,7 +30,7 @@ KidCareBand works as a standalone smart band for the child, paired with a mobile
 * No phone is required for the child to operate or interact with the system
 * This makes the solution suitable for young children and early age users.
 
-##⚙️ Core Features
+## ⚙️ Core Features
 **📍 Real-time Location Tracking**: GPS based location monitoring viewable by parents via the app.
 
 **💧 Hydration & Routine Alerts**: Timed reminders for water intake, medicine, school bus schedules, etc.
@@ -43,7 +43,7 @@ KidCareBand works as a standalone smart band for the child, paired with a mobile
 
 **🚫 No Smartphone Dependency for Children**: The band functions independently once configured.
 
-##🧩 System Architecture
+## 🧩 System Architecture
 * ESP32 – Core microcontroller with Wi-Fi capability
 * GPS Module – Location tracking
 * OLED Display – Visual alerts   
@@ -52,10 +52,10 @@ KidCareBand works as a standalone smart band for the child, paired with a mobile
 
 The modular architecture allows scalability while keeping the child-side interaction minimal.
 
-## Below is the circuit layout for the device.
+** Below is the circuit layout for the device.**
 ![KidCareBand Circuit Diagram](Hardware/KidCareBand.png)
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 * Embedded Platform: ESP32
 * Programming: Embedded C / Arduino Framework
 * Communication: Wi-Fi (Internet dependent)
@@ -63,7 +63,7 @@ The modular architecture allows scalability while keeping the child-side interac
 * Sensors & Modules: GPS, vibration motor
 * Frontend (App): Concept-level UI (future ready)
 
-##⚠️ Limitations
+## ⚠️ Limitations
 While KidCareBand demonstrates a practical and human-centric approach to child safety, it does have certain limitations at the current stage:
 
 **🌐 Continuous Internet Dependency** : Since the system is built on ESP32 with Wi-Fi connectivity, an active internet connection is required:
@@ -78,10 +78,8 @@ While KidCareBand demonstrates a practical and human-centric approach to child s
 These limitations are primarily architectural and open up meaningful opportunities for improvement.
 
 
-##🚀 Proposed Upgrade & Future Enhancement
-
+## 🚀 Proposed Upgrade & Future Enhancement
 To overcome the current internet dependency and improve reliability, the following upgrade paths are well suited:
-
 
 **📡 Cellular / LPWAN-Based Version** : 
 
@@ -97,7 +95,7 @@ To overcome the current internet dependency and improve reliability, the followi
 
 These upgrades can significantly improve usability, reliability, and scalability, especially for real-world deployment scenarios.
 
-##🎓 Learning & Educational Value
+## 🎓 Learning & Educational Value
 KidCareBand also serves as a learning ready embedded systems project, suitable for:
  * STEM & IoT education
  * Student innovation challenges
@@ -106,6 +104,6 @@ KidCareBand also serves as a learning ready embedded systems project, suitable f
 
 It connects technical architecture with empathetic design thinking.
 
-##📌 Final Note
+## 📌 Final Note
 KidCareBand is not just about tracking, it’s about designing technology that quietly supports children without overwhelming them.
 Acknowledging limitations is part of building responsible technology, and this project intentionally leaves space for growth, learning, and iteration.

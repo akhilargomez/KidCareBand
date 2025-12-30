@@ -1,15 +1,16 @@
-#Kid Care Band
+# Kid Care Band
 **A gentle blend of wearable tech, IoT, and care driven design for child safety**
+
 ![KidCareBand and App](MobileApp/App&Band.png)
 
-##🌱 About the Project
+🌱 ## About the Project
 KidCareBand is an IoT enabled smart wearable designed to support children in their daily routines while giving parents peace of mind, without making the child dependent on a smartphone.
 
 This project explores how embedded systems and connected technologies can be used not just for automation, but for care, awareness, and safety, especially for young users.
 
 At its core, KidCareBand focuses on timely alerts, location awareness, and habit support, all delivered in a child friendly and non-intrusive manner.
 
-##🎯 Problem Statement
+🎯 ##Problem Statement
 Children often forget or miss important daily routines such as:
 
 * Drinking enough water
@@ -21,7 +22,7 @@ At the same time, parents need reliable, real-time visibility without constant c
 
 KidCareBand addresses both sides of this problem using wearable hardware + mobile based monitoring, keeping the interaction simple for the child and informative for the parent.
 
-##🧠 Solution Overview
+🧠 ##Solution Overview
 KidCareBand works as a standalone smart band for the child, paired with a mobile application for parents.
 
 * The child receives alerts through vibration and on-band display

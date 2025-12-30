@@ -52,7 +52,7 @@ KidCareBand works as a standalone smart band for the child, paired with a mobile
 
 The modular architecture allows scalability while keeping the child-side interaction minimal.
 
-** Below is the circuit layout for the device. **
+**Below is the circuit layout for the device.**
 ![KidCareBand Circuit Diagram](Hardware/KidCareBand.png)
 
 ## 🛠️ Tech Stack

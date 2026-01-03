@@ -22,50 +22,50 @@ This document provides comprehensive setup instructions for the KidSafe Band pro
 
 ## Software Requirements
 ### Arduino IDE Setup
-1. **Install Arduino IDE**
+1. Install Arduino IDE
    - Download and install Arduino IDE (version 1.8.19 or later)
    - Available at: https://www.arduino.cc/en/software
 
-2. **Add ESP32 Board Support**
+2. Add ESP32 Board Support
    - Open Arduino IDE
-   - Go to **File → Preferences**
+   - Go to File → Preferences
    - Add the following URL to "Additional Board Manager URLs":
      ```
      https://dl.espressif.com/dl/package_esp32_index.json
      ```
-   - Go to **Tools → Board → Boards Manager**
+   - Go to Tools → Board → Boards Manager
    - Search for "ESP32" and install "esp32 by Espressif Systems"
 
-3. **Select Board**
-   - Go to **Tools → Board → ESP32 Arduino**
+3. Select Board
+   - Go to Tools → Board → ESP32 Arduino
    - Select your ESP32 board model (e.g., "ESP32 Dev Module")
 
 ## Library Installation
-Install the following libraries through the Arduino Library Manager (**Sketch → Include Library → Manage Libraries**):
+Install the following libraries through the Arduino Library Manager (Sketch → Include Library → Manage Libraries):
 
 ### Required Libraries
-1. **WiFi** (Built-in with ESP32 board package)
+1. WiFi (Built-in with ESP32 board package)
    - No separate installation needed
 
-2. **HTTPClient** (Built-in with ESP32 board package)
+2. HTTPClient (Built-in with ESP32 board package)
    - No separate installation needed
 
-3. **Wire** (Built-in)
+3. Wire (Built-in)
    - No separate installation needed
 
-4. **Adafruit GFX Library**
+4. Adafruit GFX Library
    - Search: "Adafruit GFX"
    - Install: "Adafruit GFX Library" by Adafruit
 
-5. **Adafruit SSD1306**
+5. Adafruit SSD1306
    - Search: "Adafruit SSD1306"
    - Install: "Adafruit SSD1306" by Adafruit
 
-6. **TinyGPSPlus**
+6. TinyGPSPlus
    - Search: "TinyGPSPlus"
    - Install: "TinyGPSPlus" by Mikal Hart
 
-7. **HardwareSerial** (Built-in with ESP32)
+7. HardwareSerial (Built-in with ESP32)
    - No separate installation needed
 
 ## ThingSpeak Configuration
@@ -73,10 +73,10 @@ Install the following libraries through the Arduino Library Manager (**Sketch �
 ### Channel Setup
 1. Create a ThingSpeak account at https://thingspeak.com
 2. Create a new channel with the following fields:
-   - **Field 1**: Latitude
-   - **Field 2**: Longitude
-   - **Field 3**: Alert Type
-   - **Field 4**: Alert Message
+   - Field 1: Latitude
+   - Field 2: Longitude
+   - Field 3: Alert Type
+   - Field 4: Alert Message
 
 ### API Keys
 Update the following credentials in the code:
@@ -109,10 +109,10 @@ The following headers are included in the code:
 ## Upload Instructions
 
 1. Connect the ESP32 to your computer via USB
-2. Select the correct COM port: **Tools → Port**
-3. Set upload speed to **115200** (Tools → Upload Speed)
-4. Click the **Upload** button
-5. Monitor output via **Tools → Serial Monitor** (set to 115200 baud)
+2. Select the correct COM port: Tools → Port
+3. Set upload speed to 115200 (Tools → Upload Speed)
+4. Click the Upload button
+5. Monitor output via Tools → Serial Monitor (set to 115200 baud)
 
 ## Features
 
@@ -128,29 +128,29 @@ The following headers are included in the code:
 - Shows motivational messages when no alerts present
 
 ### Display Modes
-- **Normal Mode**: "Stay Happy, Stay Hydrated, Stay Healthy"
-- **Alert Mode**: Shows alert type and custom message
+- Normal Mode: "Stay Happy, Stay Hydrated, Stay Healthy"
+- Alert Mode: Shows alert type and custom message
 
 ## Troubleshooting
 
 ### Common Issues
 
-**OLED Not Displaying**
+1. OLED Not Displaying
 - Check I2C address (default: 0x3C)
 - Verify SDA/SCL connections
 - Test with I2C scanner sketch
 
-**GPS Not Getting Fix**
+2. GPS Not Getting Fix
 - Ensure GPS module has clear view of sky
 - Allow 2-5 minutes for initial fix
 - Check RX/TX pin connections
 
-**WiFi Connection Failed**
+3. WiFi Connection Failed
 - Verify SSID and password
 - Check WiFi signal strength
 - Ensure 2.4GHz network (ESP32 doesn't support 5GHz)
 
-**ThingSpeak Upload Issues**
+4. ThingSpeak Upload Issues
 - Verify API keys and channel ID
 - Check internet connectivity
 - Ensure 15-second minimum interval between updates
@@ -165,10 +165,10 @@ The following headers are included in the code:
 6. Verify alert display and vibration
 
 ## Project Credits
-**Developed by**: Akhila R Gomez
-**Purpose**: Child safety wearable device for real-time tracking and emergency alerts
+Developed by: Akhila R Gomez
+Purpose: Child safety wearable device for real-time tracking and emergency alerts
 
 ## License
 This project is intended for educational purposes as part of STEM education initiatives.
 
-*For support or questions, please refer to the project repository or contact the development team.*
+For support or questions, please refer to the project repository or contact the development team.
